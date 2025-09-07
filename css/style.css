@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Define a fonte Poppins para todo o corpo e centraliza o conteúdo */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estiliza o contêiner principal do formulário */
+.contact-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+/* Estiliza o título "Entre em Contato" */
+.contact-form h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Define o espaçamento entre os campos de entrada */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estiliza todos os campos de entrada (input e textarea) */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Efeito de destaque quando um campo está em foco */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estiliza o botão de envio */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover (passar o mouse) no botão */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Regras de responsividade para telas menores (como celulares) */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .contact-form h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
